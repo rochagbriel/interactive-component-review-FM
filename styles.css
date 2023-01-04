@@ -38,7 +38,7 @@ The designs were created to the following widths:
     padding: 0;
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     list-style: none;
 }
 
@@ -145,11 +145,12 @@ footer p {
 }
 
 #submit {
+    margin: 0;
     font-size: 0.9rem;
     margin-top: 0.2rem;
     border: none;
     border-radius: 1rem;
-    width: 17rem;
+    width: 18.4rem;
     height: 2rem;
     color:hsl(0, 0%, 100%);
     background-color:hsl(25, 97%, 53%);
@@ -182,5 +183,3 @@ footer p {
 #thankYou img {
     width: 40%;
 }
-
-

@@ -9,7 +9,7 @@ let selectedButton4 = document.getElementById('button4');
 let selectedButton5 = document.getElementById('button5');
 
 const submit = document.getElementById('submit');
-let stars = 0
+let stars = 0;
 
 selectedButton1.addEventListener('click', () => {
     return stars = 1;
@@ -31,5 +31,5 @@ submit.addEventListener('click', () => {
     reviewScreen.style.display = 'none';
     thankYou.style.display = 'flex';
     message.innerHTML = `You selected ${stars} out 5`;
-})
+});
 

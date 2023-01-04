@@ -81,8 +81,9 @@ ul {
     justify-content: center;
 }
 
-li {
-    margin: 0.60rem;
+li button {
+    border: none;
+    margin: -0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +93,20 @@ li {
     padding: 1.2rem;
     border-radius: 50%;
     background-color: hsl(213, 19%, 16%);
+}
+
+li button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+li button:focus {
+    transition: 0.3s;
+    scale: 95%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
 }
 
 li a {
@@ -140,13 +155,24 @@ footer p {
     background-color:hsl(25, 97%, 53%);
 }
 
+#submit:hover {
+    cursor: pointer;
+    border: solid 0.1rem white;
+}
+
+#submit:active {
+    transition: 0.3s;
+    scale: 95%;
+    color:hsl(25, 97%, 53%);
+    background-color:  hsl(0, 0%, 100%);
+}
+
 #thankYou {
     text-align: center;
     margin: 1.8rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    display: none;
 }
 
 #thankYou h1{
@@ -156,3 +182,5 @@ footer p {
 #thankYou img {
     width: 40%;
 }
+
+

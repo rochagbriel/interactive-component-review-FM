@@ -67,7 +67,7 @@ li button:hover {
     background-color: hsl(217, 12%, 63%);
 }
 
-li button:focus-within {
+li button:focus {
     transition: 0.3s;
     scale: 95%;
     color: hsl(0, 0%, 100%);

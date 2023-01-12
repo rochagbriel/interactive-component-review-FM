@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     
+    <script src="./app.js" defer></script>
+
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
@@ -28,17 +30,18 @@
         to help us improve our offering!
         </p>
 
-        <form action="./app.js" method="get" autocomplete="on">
+        <form action="./app.js" method="post">
           <fieldset>
-            <label for="button1"><input type="radio" name="review" id="button1" value="1"> 1 </label><legend>1 Star</legend>
-            <label for="button2"><input type="radio" name="review" id="button2" value="2"> 2 </label><legend>2 Stars</legend>
-            <label for="button3"><input type="radio" name="review" id="button3" value="3"> 3 </label><legend>3 Stars</legend>
-            <label for="button4"><input type="radio" name="review" id="button4" value="4"> 4 </label><legend>4 Stars</legend>
-            <label for="button5"><input type="radio" name="review" id="button5" value="5"> 5 </label><legend>5 Stars</legend>
+            <legend>Give your score:</legend>
+            <label class="options" for="button1"><input type="radio" name="review" id="button1" value="1"> 1 </label>
+            <label class="options" for="button2"><input type="radio" name="review" id="button2" value="2"> 2 </label>
+            <label class="options" for="button3"><input type="radio" name="review" id="button3" value="3"> 3 </label>
+            <label class="options" for="button4"><input type="radio" name="review" id="button4" value="4"> 4 </label>
+            <label class="options" for="button5"><input type="radio" name="review" id="button5" value="5"> 5 </label>
           </fieldset>
         
           <p>
-            <input type="submit" value="SUBMIT">
+            <input id="btnSubmit" type="button" value="SUBMIT">
           </p>
       </form>
 
@@ -72,6 +75,5 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a></p>
       <p>Coded by <a href="https://github.com/rochagbriel" target="_blank">Gabriel Rocha.</a></p>
     </footer>
-    <script src="./app.js"></script>
   </body>
 </html>

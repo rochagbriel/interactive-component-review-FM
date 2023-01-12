@@ -138,12 +138,16 @@ form p input {
     background-color:hsl(25, 97%, 53%);
 }
 
-form p input:hover {
+form p input:disabled {
+    background-color:hsl(25, 31%, 69%);
+}
+
+form p input:enabled:hover {
     cursor: pointer;
     border: solid 0.1rem white;
 }
 
-form p input:active {
+form p input:enabled:active {
     transition: 0.3s;
     scale: 98%;
     color:hsl(25, 97%, 53%);

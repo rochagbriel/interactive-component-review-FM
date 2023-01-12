@@ -42,18 +42,26 @@ h2 {
 }
 
 input[type=radio] {
-    display: none;
+    opacity: 0;
+    position: fixed;
+    width: 0; 
 }
 
 fieldset {
+    margin: 0;
     border-style: none;
     display: flex;
     justify-content: center;
 }
 
+form {
+    margin: 0;
+    text-align: center;
+}
+
 .options {
     border: none;
-    margin: 0.8rem;
+    margin: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,22 +73,18 @@ fieldset {
     background-color: hsl(213, 19%, 16%);
 }
 
-.options:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(217, 12%, 63%);
-}
-
-.options:checked + label {
+.options:focus-within {
     transition: 0.3s;
     scale: 95%;
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
 }
 
-li a {
-    font-size: 0.9rem;
+label:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
 }
 
 p {
@@ -118,13 +122,17 @@ footer p {
     background-color: hsl(213, 19%, 16%);
 }
 
+form p {
+    margin: 0.5rem 0;
+}
+
 form p input {
     margin: 0;
     font-size: 0.9rem;
     margin-top: 0.2rem;
     border: none;
     border-radius: 1rem;
-    width: 18.4rem;
+    width: 17rem;
     height: 2rem;
     color:hsl(0, 0%, 100%);
     background-color:hsl(25, 97%, 53%);
